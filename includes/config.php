@@ -1,14 +1,14 @@
 <?php
 
-$host = 'localhost';
-$user = '';
-$pass = '';
-$data = '';
+$host = '127.0.0.1';
+$user = 'root';
+$pass = 'root';
+$data = 'status_page';
 $sSetting['refresh'] = "10000";
 
-mysql_connect($host, $user, $pass) or die(mysql_error());
-mysql_select_db($data) or die(mysql_error());
+$connection = mysqli_connect($host, $user, $pass) or die(mysqli_error());
+mysqli_select_db($connection, $data) or die(mysqli_error());
 //Template options: "default" and "dark"
-$template = "./templates/default/";
+$template = "./templates/dark/";
 $index = $template . "index.php";
 ?>
