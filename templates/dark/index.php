@@ -42,7 +42,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php echo $sTable; ?>
+                <?php echo $sNewsTable; ?>
                 </tbody>
             </table>
         </div>
